@@ -1,4 +1,8 @@
 #EXTM3U
+#EXTINF:-1,AVISO IMPORTANTE: Atualize sua lista de canais
+#EXTINF:-1,Este canal é apenas um aviso para o usuário.
+#EXTINF:-1,Por favor, entre em contato com o suporte para mais informações.
+#EXTINF:-1,Obrigado por usar o nosso serviço!
 #EXTINF:-1 tvg-id="amc.br" tvg-name="AMC SD" tvg-logo="https://prostore.app/logos/amc.png" group-title="CANAIS | FILMES E SERIES",AMC SD
 http://manyxus85.com:80/live/Simonemartins1/93569558/20891.m3u8
 #EXTINF:-1 tvg-id="amc.br" tvg-name="AMC SD ²" tvg-logo="https://prostore.app/logos/amc.png" group-title="CANAIS | FILMES E SERIES",AMC SD ²
