@@ -1,0 +1,27 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="CartoonNetwork.br" tvg-name="Cartoon Network FHD" tvg-logo="http://images.gbound.lat/logos/eDR5nSJt_o.png" group-title="INFANTIS",Cartoon Network FHD
+http://labxs.xyz:80/527510458/313500411/2474574.ts
+#EXTINF:-1 tvg-id="CartoonNetwork.br" tvg-name="Cartoon Network HD" tvg-logo="http://images.gbound.lat/logos/eDR5nSJt_o.png" group-title="INFANTIS",Cartoon Network HD
+http://labxs.xyz:80/527510458/313500411/2474556.ts
+#EXTINF:-1 tvg-id="CartoonNetwork.br" tvg-name="Cartoon Network SD" tvg-logo="http://images.gbound.lat/logos/eDR5nSJt_o.png" group-title="INFANTIS",Cartoon Network SD
+http://labxs.xyz:80/527510458/313500411/2474557.ts
+#EXTINF:-1 tvg-id="Cartoonito.br" tvg-name="Cartoonito FHD" tvg-logo="http://images.gbound.lat/logos/M5t2la1T_o.png" group-title="INFANTIS",Cartoonito FHD
+http://labxs.xyz:80/527510458/313500411/2474575.ts
+#EXTINF:-1 tvg-id="Cartoonito.br" tvg-name="Cartoonito HD" tvg-logo="http://images.gbound.lat/logos/M5t2la1T_o.png" group-title="INFANTIS",Cartoonito HD
+http://labxs.xyz:80/527510458/313500411/2474558.ts
+#EXTINF:-1 tvg-id="Cartoonito.br" tvg-name="Cartoonito SD" tvg-logo="http://images.gbound.lat/logos/M5t2la1T_o.png" group-title="INFANTIS",Cartoonito SD
+http://labxs.xyz:80/527510458/313500411/2474559.ts
+#EXTINF:-1 tvg-id="" tvg-name="Pluto Tv Naruto" tvg-logo="https://images2.imgbox.com/da/88/ZazBMLLx_o.png" group-title="PLUTO TV",Pluto Tv Naruto
+http://labxs.xyz:80/527510458/313500411/3787722.ts
+#EXTINF:-1 tvg-id="" tvg-name="Pluto TV Anime" tvg-logo="https://images2.imgbox.com/da/88/ZazBMLLx_o.png" group-title="PLUTO TV",Pluto TV Anime
+http://labxs.xyz:80/527510458/313500411/3787723.ts
+#EXTINF:-1 tvg-name="Sede de Vingança (2015)" tvg-logo="https://image.tmdb.org/t/p/w780/ws1teH5HrnDBzKn7xYq45RR9hsG.jpg" group-title="VOD REBAL2",Sede de Vingança (2015)
+http://labxs.xyz:80/movie/527510458/313500411/4199202.mp4
+#EXTINF:-1 tvg-name="O Exame Chūnin das Chamas! Naruto vs Konohamaru! (2011)" tvg-logo="https://image.tmdb.org/t/p/w780/9gjBGyDOd20GOqXOZxQd6E3MlUg.jpg" group-title="VOD REBAL2",O Exame Chūnin das Chamas! Naruto vs Konohamaru! (2011)
+http://labxs.xyz:80/movie/527510458/313500411/4197958.mp4
+#EXTINF:-1 tvg-name="Operação Invasão (2012)" tvg-logo="https://image.tmdb.org/t/p/w780/5dDHkDbzj8rYOCYqlFIna3sV8tg.jpg" group-title="VOD REBAL2",Operação Invasão (2012)
+http://labxs.xyz:80/movie/527510458/313500411/4196842.mp4
+#EXTINF:-1 tvg-name="Cabo: Amor E Desejo S01E47" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/moSGwh3gSnDbz0gcrw7zLD8MSDh.jpg" group-title="NOVELAS",Cabo: Amor E Desejo S01E47
+http://labxs.xyz:80/series/527510458/313500411/4349076.mp4
+#EXTINF:-1 tvg-name="Alma Gêmea S01E56" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vaZ2r6TFoAENLWIPdbZLLK8uPiO.jpg" group-title="NOVELAS",Alma Gêmea S01E56
+http://labxs.xyz:80/series/527510458/313500411/4323849.mp4
