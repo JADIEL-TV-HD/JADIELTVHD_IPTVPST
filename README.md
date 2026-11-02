@@ -16,6 +16,6 @@ Loja virtual em PHP + JSON, preparada para hospedagem compartilhada como Infinit
 - Gestor separado com senha validada no servidor, hash `password_hash`, sessão `HttpOnly`/`SameSite`, token CSRF e limite de tentativas por sessão.
 - Dados salvos em JSON, sem banco MySQL.
 
-Os preços iniciais estão como zero porque os valores não foram informados. Defina os preços no gestor antes de divulgar a loja. O pedido é encaminhado ao Telegram para combinar pagamento; não há processamento automático de pagamentos.
+Os preços iniciais estão como zero porque os valores não foram informados; por isso, a vitrine mostra “Consulte”. Para usar um preço definido, remova o item inicial no gestor e cadastre-o novamente com o valor correto. O pedido é encaminhado ao Telegram para combinar pagamento; não há processamento automático de pagamentos.
 
 A senha administrativa não fica no HTML ou JavaScript. O servidor guarda somente um hash. Nenhum sistema pode tornar uma requisição invisível a ferramentas de inspeção do navegador ou a uma captura feita no próprio dispositivo; use HTTPS para proteger os dados durante o transporte.
