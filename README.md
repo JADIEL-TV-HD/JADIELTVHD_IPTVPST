@@ -1,7 +1,21 @@
-# HOST MB STORE
+# HOST LOJA
 
-Loja virtual em PHP + JSON, sem MySQL, preparada para hospedagem compartilhada como InfinityFree.
+Loja virtual em PHP + JSON, preparada para hospedagem compartilhada como InfinityFree. Não utiliza MySQL.
 
-Envie o conteúdo deste repositório para a pasta `htdocs` e mantenha `index.php` na raiz pública. Edite `data/products.json` para cadastrar seus produtos. Configure o número de WhatsApp em `assets/app.js` antes de receber pedidos.
+## Instalação
 
-Os produtos iniciais são exemplos fictícios. Esta versão não processa pagamentos nem possui painel administrativo.
+1. Envie todos os arquivos e pastas para `htdocs`, mantendo `index.php` na raiz.
+2. Confirme que PHP está habilitado e que a pasta `data` permite gravação pelo PHP.
+3. Abra `gestor.php` para acessar o painel administrativo.
+4. Cadastre, ajuste ou remova os produtos pelo gestor. O catálogo fica em `data/products.json`.
+
+## Recursos
+
+- Catálogo inicial com acesso HOST MB de 15 dias, acesso de 30 dias e compra de chave KEY.
+- Carrinho com quantidades e pedido encaminhado para `https://t.me/JADIEL_TM`.
+- Gestor separado com senha validada no servidor, hash `password_hash`, sessão `HttpOnly`/`SameSite`, token CSRF e limite de tentativas por sessão.
+- Dados salvos em JSON, sem banco MySQL.
+
+Os preços iniciais estão como zero porque os valores não foram informados. Defina os preços no gestor antes de divulgar a loja. O pedido é encaminhado ao Telegram para combinar pagamento; não há processamento automático de pagamentos.
+
+A senha administrativa não fica no HTML ou JavaScript. O servidor guarda somente um hash. Nenhum sistema pode tornar uma requisição invisível a ferramentas de inspeção do navegador ou a uma captura feita no próprio dispositivo; use HTTPS para proteger os dados durante o transporte.
