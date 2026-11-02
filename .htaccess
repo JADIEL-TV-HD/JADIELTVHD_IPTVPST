@@ -1,0 +1,4 @@
+Options -Indexes
+<FilesMatch "^(store\.php)$">
+  Require all denied
+</FilesMatch>
