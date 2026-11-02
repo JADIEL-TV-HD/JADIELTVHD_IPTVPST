@@ -50,3 +50,27 @@
 .chip-icon{width:31px;height:31px;border-radius:10px;background:linear-gradient(145deg,#e8f8ed,#d7f1e0);color:#07884f;display:grid;place-items:center}.chip-icon svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .support-icon .ui-icon{width:24px;height:24px}@keyframes heroFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 @media(prefers-reduced-motion:reduce){.hero-art{animation:none}}@media(max-width:900px){.hero-visual{height:390px;width:min(460px,100%)}.hero-art{max-height:100%}}@media(max-width:650px){.hero-visual{height:300px;width:min(350px,100%)}.float-chip{padding:9px 11px}.chip-one{right:-4px;top:20px}.chip-two{left:-4px;bottom:20px}}
+
+
+/* HOST LOJA — camada 3D, microinterações e acessibilidade */
+.hero-visual{perspective:1100px;transform-style:preserve-3d}
+.hero-art{transform-style:preserve-3d;backface-visibility:hidden;will-change:transform;animation:hero3D 7s ease-in-out infinite}
+.float-chip{transform:translateZ(35px);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,border-color .35s}
+.float-chip:hover{transform:translate3d(0,-7px,48px) rotateX(5deg);box-shadow:0 24px 48px rgba(12,76,43,.18);border-color:#b9e5c8}
+.product-card{transform-style:preserve-3d;perspective:900px;will-change:transform}
+.product-card:hover{transform:perspective(900px) rotateX(2deg) rotateY(-2deg) translateY(-8px);box-shadow:0 28px 55px rgba(7,93,57,.15)}
+.product-art{transform-style:preserve-3d}
+.product-glyph{transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s;transform:translateZ(22px) rotate(-8deg)}
+.product-card:hover .product-glyph{transform:translateZ(48px) rotate(0deg) scale(1.08);box-shadow:0 25px 45px rgba(8,125,75,.32)}
+.art-halo{transition:transform .6s,opacity .6s}
+.product-card:hover .art-halo{transform:scale(1.16) rotate(18deg);opacity:.8}
+.button-main,.add-cart,.checkout,.support-band>a,.cart-open{transition:transform .25s,box-shadow .25s,background .25s}
+.button-main:active,.add-cart:active,.checkout:active,.support-band>a:active,.cart-open:active{transform:translateY(1px) scale(.98)}
+.button-main:hover,.add-cart:hover,.checkout:hover{box-shadow:0 12px 28px rgba(7,136,79,.22)}
+a:focus-visible,button:focus-visible{outline:3px solid #78d99e;outline-offset:4px}
+.support-band{position:relative;overflow:hidden;transform:translateZ(0)}
+.support-band:after{content:"";position:absolute;inset:-70% auto -70% -35%;width:35%;transform:rotate(24deg);background:linear-gradient(90deg,transparent,#ffffff18,transparent);animation:bandShine 8s ease-in-out infinite;pointer-events:none}
+@keyframes hero3D{0%,100%{transform:translateY(0) rotateX(0deg) rotateY(-1.5deg)}50%{transform:translateY(-10px) rotateX(2deg) rotateY(1.5deg)}}
+@keyframes bandShine{0%,65%{left:-40%}100%{left:120%}}
+@media(hover:none){.product-card:hover{transform:none}.product-card:hover .product-glyph{transform:translateZ(22px) rotate(-8deg) scale(1)}}
+@media(prefers-reduced-motion:reduce){.hero-art,.support-band:after{animation:none}.float-chip,.product-card,.product-glyph,.art-halo{transition:none}}
