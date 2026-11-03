@@ -200,3 +200,6 @@ button:disabled{cursor:not-allowed}
 @keyframes rippleWave{to{transform:scale(4);opacity:0}}
 @media(max-width:650px){.hero:before{filter:blur(45px);animation-duration:30s}.header{backdrop-filter:blur(18px)}.product-card:before{display:none}}
 @media(prefers-reduced-motion:reduce){.hero:before,.hero h1 em{animation:none}.reveal-ready .reveal-item{opacity:1;transform:none;transition:none}.magnetic{transition:none}}
+
+/* FIX: keep storefront products visible even if scroll-reveal is unavailable */
+.reveal-ready .reveal-item{opacity:1!important;transform:none!important;visibility:visible!important}
