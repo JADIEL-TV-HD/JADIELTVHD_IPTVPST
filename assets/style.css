@@ -164,3 +164,39 @@ button:disabled{cursor:not-allowed}
   html{scroll-behavior:auto}
   *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
 }
+
+
+/* HOST LOJA — Aurora / Liquid Glass / Motion System */
+:root{--aurora-a:rgba(82,222,145,.20);--aurora-b:rgba(91,190,255,.13);--pointer-x:50%;--pointer-y:50%}
+.header{background:rgba(255,255,255,.72);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);border-bottom:1px solid rgba(255,255,255,.72);box-shadow:0 8px 32px rgba(14,68,38,.055)}
+.hero{background:radial-gradient(ellipse at 76% 35%,rgba(151,239,183,.43),transparent 36%),radial-gradient(ellipse at 91% 78%,rgba(128,206,255,.20),transparent 34%),linear-gradient(135deg,#fbfffc 0%,#effaf2 48%,#fff 100%);isolation:isolate}
+.hero:before{content:"";position:absolute;z-index:-1;inset:-30%;pointer-events:none;background:conic-gradient(from 180deg at 65% 42%,transparent 0 12%,rgba(99,228,153,.10) 20%,transparent 33%,rgba(119,197,255,.10) 48%,transparent 62%,rgba(89,222,157,.10) 75%,transparent 90%);filter:blur(65px);animation:auroraDrift 22s ease-in-out infinite alternate}
+.hero-grid{opacity:.16;background-size:54px 54px}
+.hero-copy{--spot-x:50%;--spot-y:50%}
+.hero h1 em{background:linear-gradient(100deg,#087d49 5%,#23bd75 45%,#087d49 85%);background-size:200% auto;color:transparent;background-clip:text;-webkit-background-clip:text;animation:gradientFlow 7s linear infinite}
+.product-card,.support-band,.float-chip{position:relative}
+.product-card:before{content:"";position:absolute;inset:0;padding:1px;border-radius:inherit;background:conic-gradient(from var(--border-angle,0deg),rgba(21,166,94,.0),rgba(71,210,132,.7),rgba(133,202,255,.5),rgba(21,166,94,.0) 70%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;pointer-events:none;transition:opacity .35s;z-index:2}
+.product-card:hover:before{opacity:1;animation:borderRotate 5s linear infinite}
+.product-card{background:rgba(255,255,255,.88);backdrop-filter:blur(12px);box-shadow:0 12px 38px rgba(13,70,39,.055)}
+.product-art{background:radial-gradient(ellipse at 50% 45%,rgba(182,245,204,.8),rgba(244,252,246,.72) 58%,rgba(255,255,255,.95));}
+.product-glyph{box-shadow:0 16px 32px rgba(8,125,75,.25),inset 0 1px 0 rgba(255,255,255,.35)}
+.add-cart,.button-main,.checkout{position:relative;isolation:isolate;overflow:hidden}
+.add-cart:after,.button-main:after,.checkout:after{content:"";position:absolute;z-index:-1;inset:0;transform:translateX(-130%) skewX(-20deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.26),transparent);transition:transform .65s}
+.add-cart:hover:after,.button-main:hover:after,.checkout:hover:after{transform:translateX(130%) skewX(-20deg)}
+.support-band{background:radial-gradient(ellipse at 85% 10%,rgba(107,238,167,.30),transparent 40%),linear-gradient(115deg,#064c30,#078c52 65%,#0ba565);box-shadow:0 24px 55px rgba(7,93,57,.20)}
+.float-chip{background:rgba(255,255,255,.76);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(255,255,255,.85)}
+.reveal-ready .reveal-item{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.25,1)}
+.reveal-ready .reveal-item.is-visible{opacity:1;transform:translateY(0)}
+.product-card{--pointer-x:50%;--pointer-y:50%;overflow:hidden}
+.product-card:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;background:radial-gradient(240px circle at var(--pointer-x) var(--pointer-y),rgba(103,220,151,.13),transparent 70%);transition:opacity .25s;z-index:1}
+.product-card:hover:after{opacity:1}
+.magnetic{will-change:transform;transition:transform .2s ease}
+.ripple{position:absolute;border-radius:50%;pointer-events:none;transform:scale(0);background:rgba(255,255,255,.38);animation:rippleWave .6s ease-out forwards}
+.drawer{background:rgba(255,255,255,.94);backdrop-filter:blur(24px) saturate(150%);-webkit-backdrop-filter:blur(24px) saturate(150%)}
+.toast{backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12)}
+@keyframes auroraDrift{0%{transform:translate3d(-2%,1%,0) rotate(-5deg) scale(.96)}100%{transform:translate3d(3%,-2%,0) rotate(7deg) scale(1.06)}}
+@keyframes gradientFlow{to{background-position:200% center}}
+@keyframes borderRotate{to{--border-angle:360deg}}
+@keyframes rippleWave{to{transform:scale(4);opacity:0}}
+@media(max-width:650px){.hero:before{filter:blur(45px);animation-duration:30s}.header{backdrop-filter:blur(18px)}.product-card:before{display:none}}
+@media(prefers-reduced-motion:reduce){.hero:before,.hero h1 em{animation:none}.reveal-ready .reveal-item{opacity:1;transform:none;transition:none}.magnetic{transition:none}}
